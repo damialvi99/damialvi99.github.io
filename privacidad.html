@@ -14,10 +14,12 @@
 <p><em>Última actualización: 24 de noviembre de 2026.</em></p>
 
 <h2>Quién la usa</h2>
-<p>«Avisos de correo» es una herramienta privada. Solo la usa su propietario, con sus propias cuentas de Gmail. No recoge datos de otras personas usuarias porque no tiene otras personas usuarias.</p>
+<p>«Avisos de correo» es una herramienta privada. Solo la usa su propietario, con sus propias cuentas de Gmail y su buzón de StartMail de las tiendas. No recoge datos de otras personas usuarias porque no tiene otras personas usuarias.</p>
 
-<h2>Qué datos de Google lee</h2>
-<p>Con el permiso <code>gmail.readonly</code>, lee de la bandeja de entrada el asunto, el remitente, la fecha, las etiquetas de Gmail y el extracto breve de cada correo. No descarga adjuntos y no envía, borra ni modifica ningún correo.</p>
+<h2>Qué datos lee</h2>
+<p><strong>Gmail:</strong> con el permiso <code>gmail.readonly</code>, lee de la bandeja de entrada el asunto, el remitente, la fecha, las etiquetas de Gmail y el extracto breve de cada correo.</p>
+<p><strong>StartMail:</strong> por IMAP en modo de solo lectura, lee el asunto, el remitente, la fecha y el principio del texto de los correos de la bandeja de entrada, sin marcarlos como leídos.</p>
+<p>En ningún caso descarga adjuntos ni envía, borra o modifica correos. Esos correos pueden venir de terceros (por ejemplo, clientes de las tiendas): de ellos solo se usa lo necesario para el resumen y se ocultan direcciones de correo, enlaces, números largos y códigos antes de enviar nada fuera del ordenador.</p>
 
 <h2>Para qué los usa</h2>
 <ul>
@@ -28,19 +30,20 @@
 
 <h2>Con quién se comparten</h2>
 <ul>
-  <li><strong>OpenAI (ChatGPT):</strong> el asunto, el dominio del remitente y el extracto de los correos candidatos se envían para clasificarlos y resumirlos. Antes se ocultan enlaces, direcciones de correo, números largos y códigos.</li>
+  <li><strong>TypeSafe (modelo Jev):</strong> el asunto, el dominio del remitente y el extracto de los correos candidatos se envían para decidir si piden una acción y de qué tipo son.</li>
+  <li><strong>OpenAI (ChatGPT):</strong> solo los correos que piden acción se envían, con los mismos datos, para redactar el resumen.</li>
   <li><strong>Telegram:</strong> recibe solo el resumen final, en un chat privado del propietario.</li>
 </ul>
 <p>No se comparten con nadie más.</p>
 
 <h2>Dónde se guardan y cuánto tiempo</h2>
-<p>Todo funciona en el ordenador personal del propietario. Solo se guardan los identificadores de los correos pendientes de revisar, como máximo 7 días. Las credenciales de acceso se guardan cifradas en ese mismo ordenador.</p>
+<p>Todo funciona en el ordenador personal del propietario. Solo se guardan los identificadores de los correos pendientes de revisar, como máximo 7 días. Las credenciales de acceso se guardan en ese mismo ordenador, en archivos que solo puede leer la herramienta.</p>
 
 <h2>Uso limitado de los datos de Google</h2>
 <p>El uso y la transferencia a cualquier otra aplicación de la información recibida de las API de Google se ajustan a la <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de datos de usuario de los servicios de API de Google</a>, incluidos los requisitos de uso limitado.</p>
 
 <h2>Cómo retirar el acceso</h2>
-<p>El acceso se puede revocar en cualquier momento desde <a href="https://myaccount.google.com/permissions">la página de permisos de la cuenta de Google</a>.</p>
+<p>El acceso a Gmail se puede revocar en cualquier momento desde <a href="https://myaccount.google.com/permissions">la página de permisos de la cuenta de Google</a>. El acceso a StartMail se retira borrando la contraseña de dispositivo en los ajustes de StartMail.</p>
 
 <h2>Contacto</h2>
 <p>A través del correo de asistencia indicado en la pantalla de consentimiento de Google.</p>
